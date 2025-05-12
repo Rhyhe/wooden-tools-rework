@@ -23,12 +23,15 @@ public class WoodenToolsRework implements ModInitializer, RecipeEntrypoint, Game
     @Override
     public void onRecipesReady()
     {
-        RecipeGroup<RecipeEntryCrafting<?, ?>> workbench = Registries.RECIPES.WORKBENCH;
-        workbench.unregister("stone_pickaxe");
-        workbench.unregister("stone_axe");
-        workbench.unregister("stone_sword");
-        workbench.unregister("stone_hoe");
-        workbench.unregister("stone_shovel");
+        if (ModSettings.unregister.value)
+        {
+            RecipeGroup<RecipeEntryCrafting<?, ?>> workbench = Registries.RECIPES.WORKBENCH;
+            workbench.unregister("stone_pickaxe");
+            workbench.unregister("stone_axe");
+            workbench.unregister("stone_sword");
+            workbench.unregister("stone_hoe");
+            workbench.unregister("stone_shovel");
+        }
     }
 
     @Override
@@ -40,12 +43,11 @@ public class WoodenToolsRework implements ModInitializer, RecipeEntrypoint, Game
     @Override
     public void beforeGameStart()
     {
-
     }
 
     @Override
     public void afterGameStart()
     {
-
+        ModSettings.init();
     }
 }
