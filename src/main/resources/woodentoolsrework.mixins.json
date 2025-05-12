@@ -4,6 +4,7 @@
     "package": "rhyhe.woodentoolsrework.mixin",
     "compatibilityLevel": "JAVA_8",
     "mixins": [
+        "ToolMaterialMixin"
     ],
     "client": [
     ],
