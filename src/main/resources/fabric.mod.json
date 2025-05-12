@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "woodentoolsrework",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "Wooden Tools Rework",
+  "description": "Adds configuration options to wooden tools.",
   "authors": [
-    "Turnip Labs"
+    "Rhyhe"
   ],
   "contact": {
     "homepage": "",
@@ -19,20 +19,20 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+      "rhyhe.woodentoolsrework.WoodenToolsRework"
     ],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+          "rhyhe.woodentoolsrework.WoodenToolsRework"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+          "rhyhe.woodentoolsrework.WoodenToolsRework"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+          "rhyhe.woodentoolsrework.WoodenToolsRework"
 		]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+    "woodentoolsrework.mixins.json"
   ],
 
   "depends": {
