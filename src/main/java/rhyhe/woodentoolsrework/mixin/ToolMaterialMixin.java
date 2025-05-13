@@ -14,7 +14,7 @@ public class ToolMaterialMixin
     // This is probably a hack way to change the properties of wood to stone - Rhyhe
     @Final
     @Shadow
-    public static ToolMaterial wood = Config.config.getBoolean(
+    public final static ToolMaterial wood = Config.config.getBoolean(
             "wood_is_stone") ? ToolMaterial.stone : ToolMaterial.wood;
 
 }
