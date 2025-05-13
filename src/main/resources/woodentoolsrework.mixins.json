@@ -1,14 +1,15 @@
 {
-    "required": true,
-    "minVersion": "0.8",
-    "package": "rhyhe.woodentoolsrework.mixin",
-    "compatibilityLevel": "JAVA_8",
-    "mixins": [
-        "ToolMaterialMixin"
-    ],
-    "client": [
-    ],
-    "injectors": {
-        "defaultRequire": 1
+  "required": true,
+  "minVersion": "0.8",
+  "package": "rhyhe.woodentoolsrework.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "AchievementsMixin",
+    "ToolMaterialMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
   }
 }
