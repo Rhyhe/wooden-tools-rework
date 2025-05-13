@@ -20,7 +20,7 @@ public class Config
     private static TomlConfigHandler createConfiguration()
     {
         Toml defaultToml = createDefaultTOML();
-        TomlConfigHandler config = new TomlConfigHandler(WoodenToolsRework.MOD_ID, createDefaultTOML(), false);
+        TomlConfigHandler config = new TomlConfigHandler(WoodenToolsRework.MOD_ID, defaultToml, false);
         File configFile = config.getConfigFile();
         if (configFile.exists())
         {
