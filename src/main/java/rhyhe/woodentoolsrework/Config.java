@@ -54,9 +54,13 @@ public class Config
 
     private static Toml createDefaultTOML()
     {
-        Toml toml = new Toml("Wooden Tools Rework Configuration File");
-        toml.addEntry("unregister", "Unregisters the stone tools recipes.", true);
-        toml.addEntry("woodisstone", "Replaces the wood material to stone.", true);
-        return toml;
+        return new Toml("Wooden Tools Rework Configuration File")
+                .addEntry("unregister", "Unregisters the stone tools recipes.", true)
+                .addEntry("wood_is_stone", "Replaces the wood material to stone, making all wooden tools stone tools.",
+                        true)
+                .addEntry("build_better_pickaxe_iron",
+                        "Replaces the logo of the achievement BUILD_BETTER_PICKAXE with an iron pickaxe instead of a stone one.",
+                        true);
+
     }
 }
