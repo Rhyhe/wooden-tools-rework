@@ -16,7 +16,6 @@ import rhyhe.woodentoolsrework.Config;
 @Mixin(value = Achievements.class, remap = false)
 public class AchievementsMixin
 {
-
     @Redirect(method = "<clinit>", at = @At(value = "NEW", target = "(Lnet/minecraft/core/util/collection/NamespaceID;Ljava/lang/String;Lnet/minecraft/core/item/IItemConvertible;Lnet/minecraft/core/achievement/Achievement;)Lnet/minecraft/core/achievement/Achievement;"
             , ordinal = 12))
     @NotNull
@@ -25,8 +24,8 @@ public class AchievementsMixin
         return new Achievement(
                 id,
                 name,
-                Config.config.getBoolean(
-                        "build_better_pickaxe_iron") ? Items.TOOL_PICKAXE_IRON : icon,
+                Config.config.getBoolean("build_better_pickaxe_iron") ?
+                        Items.TOOL_PICKAXE_IRON : icon,
                 parent
         );
     }
