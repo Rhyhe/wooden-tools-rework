@@ -2,7 +2,6 @@
   "schemaVersion": 1,
   "id": "woodentoolsrework",
   "version": "${version}",
-
   "name": "Wooden Tools Rework",
   "description": "Adds configuration options to wooden tools.",
   "authors": [
@@ -12,31 +11,28 @@
     "homepage": "",
     "sources": ""
   },
-
-	"icon": "icon.png",
+  "icon": "icon.png",
   "license": "CC0-1.0",
-
   "environment": "*",
   "entrypoints": {
     "main": [
       "rhyhe.woodentoolsrework.WoodenToolsRework"
     ],
-		"beforeGameStart": [
-          "rhyhe.woodentoolsrework.WoodenToolsRework"
-		],
-		"afterGameStart": [
-          "rhyhe.woodentoolsrework.WoodenToolsRework"
-		],
-		"recipesReady": [
-          "rhyhe.woodentoolsrework.WoodenToolsRework"
-		]
-	},
+    "beforeGameStart": [
+      "rhyhe.woodentoolsrework.WoodenToolsRework"
+    ],
+    "afterGameStart": [
+      "rhyhe.woodentoolsrework.WoodenToolsRework"
+    ],
+    "recipesReady": [
+      "rhyhe.woodentoolsrework.WoodenToolsRework"
+    ]
+  },
   "mixins": [
     "woodentoolsrework.mixins.json"
   ],
-
   "depends": {
-		"minecraft": "*",
+    "minecraft": "*",
     "fabricloader": ">=0.15.5"
   },
   "suggests": {
