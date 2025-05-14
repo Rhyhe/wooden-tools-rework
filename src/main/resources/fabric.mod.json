@@ -8,8 +8,9 @@
     "Rhyhe"
   ],
   "contact": {
-    "homepage": "",
-    "sources": ""
+    "homepage": "https://github.com/Rhyhe/wooden-tools-rework",
+    "sources": "https://github.com/Rhyhe/wooden-tools-rework",
+    "issues": "https://github.com/Rhyhe/wooden-tools-rework/issues"
   },
   "icon": "icon.png",
   "license": "CC0-1.0",
