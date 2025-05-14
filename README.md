@@ -8,3 +8,5 @@ Currently, this mod adds three options in the config file:
   a stone pickaxe.
 
 This mod was never tested in multiplayer, so I do not know what would happen.
+
+By default all options will be enabled
